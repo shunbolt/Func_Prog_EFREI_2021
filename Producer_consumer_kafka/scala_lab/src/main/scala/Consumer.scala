@@ -13,7 +13,7 @@ object Consumer extends App {
 
   import java.util.Properties
 
-  val TOPIC="rtran"
+  val TOPIC="test"
 
   val  props = new Properties()
   props.put("bootstrap.servers", "localhost:9092")

@@ -1,0 +1,14 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/paul/FDP/Func_Prog_EFREI_2021/Producer_consumer_kafka/scala_lab/src/main/scala/Producer.scala:63:29: Detected apparent refinement of Unit; are you missing an '=' sign?[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def send_violation(): Unit{[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/paul/FDP/Func_Prog_EFREI_2021/Producer_consumer_kafka/scala_lab/src/main/scala/Producer.scala:68:27: Detected apparent refinement of Unit; are you missing an '=' sign?[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def send_regular(): Unit{[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/paul/FDP/Func_Prog_EFREI_2021/Producer_consumer_kafka/scala_lab/src/main/scala/Producer.scala:65:5: illegal start of declaration (possible cause: missing `=' in front of current method body)[0m
+[0m[[0m[31merror[0m] [0m[0m    producer.send(record)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/paul/FDP/Func_Prog_EFREI_2021/Producer_consumer_kafka/scala_lab/src/main/scala/Producer.scala:70:5: illegal start of declaration (possible cause: missing `=' in front of current method body)[0m
+[0m[[0m[31merror[0m] [0m[0m    producer.send(record)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
