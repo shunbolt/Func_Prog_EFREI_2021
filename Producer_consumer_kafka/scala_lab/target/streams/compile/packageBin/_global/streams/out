@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /home/paul/FDP/Func_Prog_EFREI_2021/Producer_consumer_kafka/scala_lab/target/scala-2.11/hello-world_2.11-1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[0m
@@ -31,3 +32,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	Consumer.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/paul/FDP/Func_Prog_EFREI_2021/Producer_consumer_kafka/scala_lab/target/scala-2.11/classes/Consumer.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/rafa/Desktop/ScalaLab/Repo github/Func_Prog_EFREI_2021/Producer_consumer_kafka/scala_lab/target/scala-2.11/hello-world_2.11-1.0.jar[0m
+>>>>>>> Stashed changes
