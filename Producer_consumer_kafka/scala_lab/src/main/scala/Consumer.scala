@@ -13,7 +13,7 @@ object Consumer extends App {
 
   import java.util.Properties
 
-  val TOPIC="test"
+  val TOPIC="rtran"
 
   val  props = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
@@ -30,7 +30,7 @@ object Consumer extends App {
   while(true){
     val records=consumer.poll(100)
     for (record<-records.asScala){
-      println("offset = %d, key = %s, value = %s%n", record.offset,record.key ,record.value)
+      println(record.value)
     }
   }
 }
