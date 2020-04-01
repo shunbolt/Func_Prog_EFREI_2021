@@ -15,7 +15,7 @@ object Producer extends App {
   props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
 
   val producer = new KafkaProducer[String, String](props)
-  val TOPIC="rtran"
+  val TOPIC=args(0)
 
   val r = scala.util.Random
   var filename = "violation_list.csv"
@@ -61,22 +61,27 @@ object Producer extends App {
   }
 
   def send_violation(): Unit = {
+    Thread.sleep(r.nextInt(3000))
     val record = new ProducerRecord(TOPIC, "key", violation_message)
     producer.send(record)
   }
 
   def send_regular(): Unit = {
+    Thread.sleep(r.nextInt(3000))
     val record = new ProducerRecord(TOPIC, "key", regular_message)
     producer.send(record)
   }
 
-  def send_messages(): Unit = {
-    Thread.sleep(r.nextInt(3000))
-    select_record(r.nextInt(100), 20)
-    send_messages
+  def send_messages(x: Int, proba: Int): Unit = x match {
+    case x if x > 0 => send_message(x, proba)
+    case x if x == 0 => return
   }
 
-  send_messages
+  def send_message(x: Int, proba: Int): Unit ={
+    select_record(r.nextInt(100), proba)
+    send_messages(x-1, proba)
+  }
 
+  send_messages(args(1).toInt, args(2).toInt)
   producer.close()
 }
