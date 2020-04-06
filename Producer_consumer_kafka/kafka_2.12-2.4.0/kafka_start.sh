@@ -19,10 +19,8 @@ sleep 2
 
 bin/kafka-server-start.sh -daemon config/server-2.properties > server2.log 2>&1 &  
 sleep 2
-#
-
 # Open new terminal then create new topic
-bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 3 --partitions 3 --topic $1
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 3 --partitions 1 --topic $1
 sleep 2
 
 echo "Kafka setup finished"
